@@ -1,0 +1,35 @@
+
+/******************************************/
+/* Criar as configuração do Media Queries */
+/******************************************/
+
+/*****  CONFIG. PADRÃO  *****/
+@media screen  {
+    body{
+        background-color: #ADD8E6;
+    }
+    
+    body .site{
+        width: 80%;
+        margin: auto;
+    }
+    
+    body .site .conteudo{
+        width: 100%;
+        background-color: #FFF;
+        margin-top: 5px;
+        padding: 5%;
+        box-sizing: border-box;
+        border: 1px solid #000;    
+    }
+}
+
+/*****  CONFIG. TELAS MAIORES  *****/
+@media screen and (min-width: 760px){
+
+    body .site .conteudo{
+        width: 31%;
+        float: left;
+        margin: 1%;
+    }
+}

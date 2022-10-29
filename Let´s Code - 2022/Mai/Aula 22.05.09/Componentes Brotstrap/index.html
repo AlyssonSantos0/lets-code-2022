@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes</title>
+
+    <!-- Importação do CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Criação do Container Principal -->
+    <div class="container d-none">
+        <h4>Cadastro</h4>
+        <form>
+            <div class="form-group">
+                <label class="form-label" for="nome">Nome</label>
+                <input class="form-control" type="text"   name="nome" id="nome">
+                <label class="form-label"  for="senha">Senha</label>
+                <input class="form-control" type="password" name="senha" id="senha">
+                <label class="form-label" for="descricao">Descrição</label>
+                <textarea class="form-control" name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-group form-switch">
+                <input class="form-check-input" type="checkbox" id="check1">
+                <label for="check1">Lembrar de mim</label>
+            </div>
+            
+            <div class="fomr-group">
+                <label class="form-label" for="cidade">Cidade</label>
+                <select class="form-select" id="cidade">
+                    <option value="Teresina">Teresina</option>
+                    <option value="Paulino Neves">Paulino Neves</option>
+                    <option value="Parnaíba">Parnaíba</option>
+                    <option value="Ilha Grande">Ilha Grande</option>
+                </select>
+            </div>
+
+            <div class="form-group mt-2">
+
+                <button type="submit" class="btn btn-outline-primary col-12 my-3" >Entrar</button>
+            
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Default radio
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Default checked radio
+                </label>
+            </div>
+
+            <div class="alert alert-danger d-none">
+                preencha o campo XXX
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Criação do Main para Conteúdos Principais -->
+    <main class="container mt-5 d-none">
+        <div class="row gy-4 g-md-3">
+            <div class="col-md-6 col-xl-3 ">
+                <div class="cor-vermelho p-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ratione dicta sequi labore eius inventore, amet eos! Distinctio, optio natus. Voluptatibus optio error doloribus ratione dolor suscipit delectus debitis autem.
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="cor-azul p-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ratione dicta sequi labore eius inventore, amet eos! Distinctio, optio natus. Voluptatibus optio error doloribus ratione dolor suscipit delectus debitis autem.
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="cor-verde">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ratione dicta sequi labore eius inventore, amet eos! Distinctio, optio natus. Voluptatibus optio error doloribus ratione dolor suscipit delectus debitis autem.
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="cor-rosa">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ratione dicta sequi labore eius inventore, amet eos! Distinctio, optio natus. Voluptatibus optio error doloribus ratione dolor suscipit delectus debitis autem.
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+                <button class="btn btn-primary mx-3" disabled>Eu sou um botão</button>
+                <button class="btn btn-success mx-3">Eu sou um botão</button>
+                <button class="btn btn-danger mx-3">Eu sou um botão</button>
+                <button class="btn btn-warning mx-3">Eu sou um botão</button>
+            </div>
+
+            <div class="col-12 d-flex justify-content-between">
+                <button class="btn btn-outline-primary">Eu sou um botão</button>
+                <button class="btn btn-outline-success">Eu sou um botão</button>
+                <button class="btn btn-outline-danger">Eu sou um botão</button>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Criação de uma Div com conteúdos submetidos a classe container -->
+    <div class="container mt-3">
+        <div class="row justify-content-between">
+            <div class="card col-3 text-center">
+                <img class="card-img-top" src="./img/image01.jpg" alt="">
+                <div class="card-body"></div>
+                    <h5 class="card-title">Dias das Mães</h5>
+                    <p class="card-text">É um dia de muita  alegria</p>
+                <button class="btn btn-primary">Acessar</button>
+            </div>
+
+            <div class="card col-3 text-center">
+                <img class="card-img-top" src="./img/image02.jpg" alt="">
+                <div class="card-body"></div>
+                    <h5 class="card-title">Dias dos Pais</h5>
+                    <p class="card-text">Também é um um dia de muita alegria</p>
+                <button class="btn btn-primary">Acessar</button>
+            </div>
+        </div>
+
+
+        <div class="accordion mt-5" id="perguntas-pais">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta-mae">
+                        Por que a minha mãe é a melhor do mundo?
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" data-bs-parent="#perguntas-pais" id="pergunta-mae">
+                    <div class="accordion-body" >
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quod provident quam autem accusantium accusamus maiores esse, deleniti dicta inventore odio a, tempora exercitationem culpa magni earum dolores fugit dolorem.
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta-pai">
+                        Por que o meu pai é o melhor do mundo?
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" data-bs-parent="#perguntas-pais" id="pergunta-pai">
+                    <div class="accordion-body" >
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quod provident quam autem accusantium accusamus maiores esse, deleniti dicta inventore odio a, tempora exercitationem culpa magni earum dolores fugit dolorem.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="accordion-item ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item-filho">
+                        Por que o meu pai é o melhor do mundo?
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion" id="item-filho">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item-filho">
+                                        Accordion 1
+                                    </button>
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, molestiae cumque incidunt praesentium a quae id, expedita iusto harum ducimus error aperiam! Quasi voluptas tempore magni molestiae qui temporibus beatae!
+                                    </div>
+                                </h2>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item-filho">
+                                        Accordion 2
+                                    </button>
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, molestiae cumque incidunt praesentium a quae id, expedita iusto harum ducimus error aperiam! Quasi voluptas tempore magni molestiae qui temporibus beatae!
+                                    </div>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </h2>
+            </div>
+    </div>
+
+
+    <!-- Importação do JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

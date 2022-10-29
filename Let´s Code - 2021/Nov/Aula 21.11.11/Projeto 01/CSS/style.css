@@ -1,0 +1,25 @@
+/* Sistema de Grid */
+
+.linha{width: 1200px; margin: auto;}
+
+.cols{float: left; overflow: auto;}
+
+.cols01{width: 100px;}
+.cols02{width: 200px;}
+.cols03{width: 300px;}
+.cols04{width: 400px;}
+.cols05{width: 500px;}
+.cols06{width: 600px;}
+.cols07{width: 700px;}
+.cols08{width: 800px;}
+.cols09{width: 900px;}
+.cols10{width: 1000px;}
+.cols11{width: 1100px;}
+.cols12{width: 1200px;}
+
+/* Fim do Sistema de Grid */
+
+.linha-superior{
+    background-color: #0067B5;
+    height: 30px;
+}

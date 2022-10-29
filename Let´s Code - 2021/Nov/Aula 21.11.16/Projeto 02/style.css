@@ -1,0 +1,19 @@
+
+@media screen {
+    h1{
+        font-size: 35px;
+        color: red;
+    }
+}
+
+@media screen and (max-width: 640px){
+    body{
+        background-color: chartreuse;
+    }
+}
+
+@media screen and (min-width: 641px){
+    body{
+        background-color: cyan;
+    }
+}

@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+ }
+
+ body{
+     background-image: url("../imagens/bg.jpg");
+     background-attachment: fixed;
+     background-position: right bottom;
+ }
+
+ .site{
+     margin: auto;
+     width: 800px;
+     height: 1300px;
+ }

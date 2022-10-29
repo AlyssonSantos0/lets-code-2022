@@ -1,0 +1,25 @@
+/* Reset */
+*{padding: 0px; margin: 0px;}
+
+.container{
+    width: 350px;
+    height: 1350px;
+    background-color: darkcyan;
+}
+
+.container .caixa1, .caixa2, .caixa3{
+    width: 100px;
+    height: 100px;
+}
+
+.container .caixa1{
+    background-color: darkkhaki;
+}
+
+.container .caixa2{
+    background-color: darksalmon;
+}
+
+.container .caixa3{
+    background-color: darkseagreen;
+}
